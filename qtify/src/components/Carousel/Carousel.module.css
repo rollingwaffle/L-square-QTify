@@ -1,0 +1,39 @@
+.carousel {
+    color: var(--color-white);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: auto !important;
+    /* flex-shrink: 1 !important; */
+}
+
+.slide {
+    flex-shrink: 1 !important;
+}
+
+
+
+
+.mySwiper {
+    width: 100%;
+}

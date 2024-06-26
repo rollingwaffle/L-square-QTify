@@ -16,7 +16,7 @@
 }
 
 .sectionButton {
-    width: 90px;
+    /* width: 90px; */
     height: 30px;
     border: none;
     background-color: var(--color-black);
