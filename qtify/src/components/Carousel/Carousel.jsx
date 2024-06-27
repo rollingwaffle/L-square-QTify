@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import CarouselRight from "./CarouselRightNavigation/CarouselRightNavigation";
 
-const Carousel = ({ data }) => {
+const Carousel = ({ data, type }) => {
   return (
     <div className={styles.carousel}>
       <Swiper
@@ -27,7 +27,7 @@ const Carousel = ({ data }) => {
 
         {data.map((item, index) => (
           <SwiperSlide className={styles.slide} key={index}>
-            <CardComponent data={item} />
+            <CardComponent data={item} type={type} />
           </SwiperSlide>
         ))}
       </Swiper>

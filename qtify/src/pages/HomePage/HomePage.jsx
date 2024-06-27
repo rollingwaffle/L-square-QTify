@@ -7,13 +7,21 @@ const HomePage = () => {
   const { data } = useOutletContext();
   // console.log("data fro home", data);
 
-  const { topAlbums, newAlbums, songs } = data;
+  const { topAlbums, newAlbums, songs, genres } = data;
   return (
     <div>
       <HeroComponent />
       <Section title="Top Albums" data={topAlbums} type="album" />
       <Section title="New Albums" data={newAlbums} type="album" />
-      {/* <Section title="Songs" data={songs} type="songs" /> */}
+      <div
+        style={{
+          backgroundColor: "var(--color-primary)",
+          width: "100%",
+          height: "2px",
+          marginTop: "20px",
+        }}
+      ></div>
+      <Section title="Songs" data={songs} type="songs" genres={genres} />
     </div>
   );
 };
